@@ -217,19 +217,15 @@ body{
     padding: 40px;
     --color-plan: #696871;
     --color-price: #1D293F;
-    --bg-cta: #fff;
-    --color-cta: #5454D4;
     --color-items: #696871;
 }
 
 .price__element--best{
     width: 370px;
     padding: 60px 40px;
-    background-color: #4682B4;
-    --color-plan: rgb(255 255 255 / 75%);
-    --color-price: #fff;
-    --bg-cta: #00008B;
-    --color-cta: #FFF;
+    background-color: #e5e5f3;
+    --color-plan: #1D293F;
+    --color-price: #1D293F;
     --color-items: #fff;
 }
 
@@ -264,6 +260,26 @@ body{
     color: var(--color-cta);
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 }
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll
+
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-type: x mandatory;
+}
+
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+}
+
 
 /* Testimony*/
 
